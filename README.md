@@ -1,4 +1,4 @@
-# Ecosofia - Introdução
+# Ecosofia-OsBaderneiros
 Site de geografia do grupo "Os baderneiros"
 - Tema escolhido: Lixo eletrônico
 - Integrantes: Lavínnia, Kauã Henrique, Julia Sophia e Vitor Pecoraro
