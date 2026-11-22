@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="favicon.png">  
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!--Link de fonts do google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Russo+One&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Botão do menu - invisível em dispositivos como computadores ou maiores -->
+        <button class="btn-menu" id="btn-menu" aria-label="Abrir menu" aria-expanded="false"><img src="icone-menu.png" alt="icone de menu"></button>
+        <img src="logo.png" id="logo" alt="logo: imagem de computador com icone global no fundo, dele saem circuitos elétricos e raízez de planta">
+        <h2>Ecosofia</h2>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="descarte.html">Descarte</a>
+            <a href="iniciativa.html">Iniciativas Ambientais</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="fontes.html">Fontes</a>
+        </nav>
+    </header>
+    <main>
+        <h1>QUIZ:</h1>
+        <h2 id="subtitulo">Verifique seus conhecimentos adquiridos com esse teste:</h2>
+        <form id="form-quiz" class="quiz">
+            <section class="perguntas">
+            <!-- Pergunta 1 -->
+            <div class="card-quiz">
+                <h2>1.</h2>
+                <p>Qual destes itens é considerado lixo eletrônico (e-lixo)?</p>
+                <section>
+                    <input type="radio" id="p1-r1" name="pergunta1" value="resposta1">
+                    <label for="p1-r1">Casca de banana</label>
+                </section>
+                <section>
+                    <input type="radio" id="p1-r2" name="pergunta1" value="resposta2">
+                    <label for="p1-r2">Celular quebrado e pilhas</label>
+                </section>
+                <section>                
+                    <input type="radio" id="p1-r3" name="pergunta1" value="resposta3">
+                    <label for="p1-r3">Garrafa PET de refrigerante</label>
+                </section>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="card-quiz">
+                <h2>2.</h2>
+                <p>Qual é o destino correto para equipamentos eletrônicos sem uso?</p>
+                <section>
+                    <input type="radio" id="p2-r1" name="pergunta2" value="resposta1">
+                    <label for="p2-r1">Pontos de coleta de logística reversa</label>
+                </section>
+                <section>
+                    <input type="radio" id="p2-r2" name="pergunta2" value="resposta2">
+                    <label for="p2-r2">Lixo comum da rua</label>
+                </section>
+                <section>                
+                    <input type="radio" id="p2-r3" name="pergunta2" value="resposta3">
+                    <label for="p2-r3">Terrenos baldios ou rios</label>
+                </section>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="card-quiz">
+                <h2>3.</h2>
+                <p>Qual metal pesado tóxico pode ser encontrado no lixo eletrônico?</p>
+                <section>
+                    <input type="radio" id="p3-r1" name="pergunta3" value="resposta1">
+                    <label for="p3-r1">Oxigênio</label>
+                </section>
+                <section>
+                    <input type="radio" id="p3-r2" name="pergunta3" value="resposta2">
+                    <label for="p3-r2">Cálcio</label>
+                </section>
+                <section>                
+                    <input type="radio" id="p3-r3" name="pergunta3" value="resposta3">
+                    <label for="p3-r3">Chumbo e mercúrio</label>
+                </section>
+            </div>
+            </section>
+
+            <button type="submit" id="btn-enviar-quiz">Finalizar Quiz</button>
+        </form>
+        <section class="resultados">
+            <!-- Informações finais do quiz -> serão implementadas com JS -->
+            <div>
+                <h2>Resultados: </h2>
+                <p>Número de acertos: <span id="acertosNum">0</span>/3</p>
+                <p>Número de erros: <span id="errosNum">0</span>/3</p>
+                <p>Resultado: <span id="resultado">não realizado</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2026 - Ecosofia - Trabalho acadêmico</p>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="descarte.html">Descarte</a>
+            <a href="iniciativa.html">Iniciativas Ambientais</a>
+            <a href="quiz.html">Quiz</a>
+        </nav>
+    </footer>
+</body>
+</html>
